@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA IMC</h1>
+<script>
+
+    function Saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+//aqui declaramos las dos funciones para ahorrar lineas de codigo 
+    function imprimir (frase){
+        document.write(frase);
+        Saltarlinea();
+    }
+
+    function calculadoraimc(peso,altura){
+        return (peso/(altura*altura));
+        }
+
+    nombre = prompt("Informe su nombre: ");
+    pesoinformado= prompt(nombre + ", informe su peso: ");
+    alturainformado=prompt(nombre + ", informe su altura: ")
+
+    imccalculado= calculadoraimc(pesoinformado,alturainformado);
+    imprimir(nombre + " ||El imc calculado es: " + imccalculado)
+    /*let imcBrandon = calculadoraimc(80,1.77)
+    let imcFelipe= calculadoraimc(75,1.75)
+    */
+   // imprimir("el promedio del imc de brandon y felipe es: " + (calculadoraimc(80,1.77)+calculadoraimc(75,1.75))/2);
+
+   /* pesoBrandon=81;
+    alturaBrandon=1.77
+    imcBrandon = calculadoraimc(pesoBrandon,alturaBrandon)
+    imprimir("El imc de brandon es: " + imcBrandon);
+
+    pesoFelipe=75;
+    alturaFelipe=1.77;
+    imcFelipe = calculadoraimc(pesoFelipe,alturaFelipe)   
+    imprimir("El imc de Felipe es: " + imcFelipe);
+*/
+    </script>

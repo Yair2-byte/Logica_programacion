@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA</h1>
+<script>
+
+    function Saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+//aqui declaramos las dos funciones para ahorrar lineas de codigo 
+    function imprimir (frase){
+        document.write(frase);
+        Saltarlinea();
+    }
+    let anho = 2023;
+    imprimir("hola amigos");
+    //este codigo calcula las edades de las personas mencionadas 
+   imprimir("Brandon Tiene: " + (anho - 2001 ) + "años");
+   //al borrar el saltar linea por la funcion de imprimir lo hara automaticamente sin necesidad de volver a llamar al funcion 
+   //Saltar linea
+   imprimir("Juan Tiene: " + (anho - 2002) + "años");
+    anho=2030;
+   imprimir("Pedro Tiene: " + (anho - 2005) + "años");
+
+</script> 
+
+
